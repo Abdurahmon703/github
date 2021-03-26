@@ -1,0 +1,14 @@
+.advertising {
+    position: relative;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            display: block;
+            position: relative;
+        }
+    }
+}

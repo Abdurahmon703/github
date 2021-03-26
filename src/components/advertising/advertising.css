@@ -1,0 +1,11 @@
+.advertising {
+  position: relative; }
+  .advertising .container {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .advertising .container a {
+      display: block;
+      position: relative; }
+
+/*# sourceMappingURL=advertising.css.map */

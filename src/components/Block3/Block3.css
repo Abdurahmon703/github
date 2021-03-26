@@ -1,0 +1,145 @@
+.Block3 .icon {
+  color: #939393;
+  font-size: 25px;
+  display: none;
+  cursor: pointer;
+}
+.Block3 {
+  border-top: 1px solid #e1e1e1;
+}
+.Block3 .Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: left 0.4s;
+  position: relative;
+  width: 100%;
+  z-index: 222;
+}
+.Block3 .Navbar li {
+  padding: 5px 0;
+  margin-top: -3px;
+  border-top: 3px solid transparent;
+  transition: 0.3s;
+  position: relative;
+}
+.Block3 .Navbar li:first-child {
+  border-top: 3px solid #0a396d;
+}
+.Block3 .Navbar li:hover {
+  border-top: 3px solid #0a396d;
+}
+
+.Block3 .Navbar a,
+.Block3 .Navbar a {
+  color: #939393;
+  padding: 10px 0;
+  display: inline-block;
+  cursor: pointer;
+}
+.Block3 .Navbar a .angle-down {
+  margin-left: 5px;
+  position: relative;
+  top: 3px;
+}
+.Block3 .Navbar .news-parent .news {
+  display: none;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  width: 230px;
+  background: #fff;
+}
+.Block3 .Navbar .news-parent .news li {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.Block3 .Navbar .news-parent .news li a,
+.Block3 .Navbar .news-parent .news li a {
+  padding: 10px 14px;
+  width: 100%;
+  margin: 0;
+  transition-property: color, background;
+  transition: 0.3s;
+}
+.Block3 .Navbar .news-parent .news li a:hover,
+.Block3 .Navbar .news-parent .news li a:hover {
+  background: #0e649b;
+  color: #fff;
+}
+.Block3 .Navbar .news-parent:hover > .news {
+  display: block;
+}
+.Block3 .Navbar .news-parent .news > li a {
+  position: relative;
+}
+.Block3 .Navbar .news-parent .news > li a svg {
+  position: absolute;
+  left: 90%;
+  top: 50%;
+  transform: translate(-90%, -50%);
+}
+.Block3 .Navbar .news-parent:hover > .news li .world-news-parent {
+  position: relative;
+}
+.Block3 .Navbar .news-parent:hover > .news li .world-news {
+  left: 99%;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: none;
+  background: #fff;
+}
+.Block3 .Navbar .news-parent:hover > .news > li:hover > .world-news {
+  display: block;
+}
+@media only screen and (max-width: 599px) {
+  .Block3 .icon {
+    display: block;
+    text-align: center;
+  }
+
+  .Block3 .Navbar li {
+    width: 100%;
+  }
+  .Block3 .Navbar a .angle-down {
+    display: none;
+  }
+  .Block3 .Navbar .news-parent .news {
+    display: block;
+    position: relative;
+  }
+  .Block3 .Navbar .news-parent .news > li a svg {
+    display: none;
+  }
+  .Block3 .Navbar .news-parent > .news > li > .world-news {
+    display: block !important;
+    position: relative !important;
+    left: 20px !important;
+  }
+  .Block3 .Navbar .news-parent .news li a:hover,
+  .Block3 .Navbar .news-parent .news li a:hover {
+    background: transparent;
+    color: #312e2e;
+  }
+  .Block3 .s12 {
+    position: relative;
+  }
+  .Block3 .Navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    left: -120%;
+    background: #fff;
+    position: absolute;
+  }
+  .Block3 .active-nav {
+    transition: left 0.4s;
+    left: 0% !important;
+    z-index: 222;
+    width: 100%;
+  }
+  .Block3 .container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,9 @@
+.Block2 {
+  z-index: 2;
+  position: relative;
+  background: #fff;
+  top: -10px;
+  min-height: 100px;
+  display: flex !important;
+  align-items: center !important;
+}
